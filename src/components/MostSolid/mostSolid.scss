@@ -1,0 +1,189 @@
+.most_solid {
+  height: 100vh;
+  width: 95%;
+  margin: 3rem auto;
+
+  .carousel_container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    flex-direction: column;
+    .carousel_label {
+      position: absolute;
+      top: 0;
+      left: 3rem;
+      background-color: black;
+      color: white;
+      padding: 0.1rem 0.8rem;
+      border-radius: 3px;
+      font-size: 0.8rem;
+    }
+    .carousel_btn {
+      background-color: rgb(82, 164, 82);
+      color: white;
+      width: 200px;
+      text-align: center;
+      padding: 0.7rem;
+      border-radius: 5px;
+      transition: 0.3s;
+      cursor: pointer;
+      opacity: 0;
+    }
+    .carousel_btn:hover {
+      background-color: rgb(76, 110, 76);
+      font-weight: bold;
+    }
+    .carousel_image_container {
+      width: 200px;
+      height: 200px;
+
+      .carousel_image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+  .carousel_container:hover {
+    .carousel_btn {
+      opacity: 1;
+    }
+  }
+}
+
+.solid_product {
+  .solid_product_container {
+    display: flex;
+    gap: 2rem;
+
+    .solid_left {
+      flex: 1;
+      .solid_img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+    .solid_right {
+      flex: 1;
+      padding-top: 1rem;
+      box-sizing: border-box;
+      .share_container {
+        display: flex;
+
+        gap: 1rem;
+        .share {
+          display: flex;
+          gap: 1rem;
+        }
+        .txt:hover {
+          color: rgb(146, 146, 63);
+          cursor: pointer;
+        }
+        .share_icon:hover {
+          color: rgb(146, 146, 63);
+          cursor: pointer;
+        }
+      }
+      .read_more {
+        font-weight: bold;
+        color: rgb(147, 147, 52);
+      }
+      .read_more:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      .deliv {
+        font-weight: bold;
+        color: #64cd82;
+      }
+      .buttons {
+        width: 70%;
+        .addCart {
+          display: flex;
+          gap: 0.5rem;
+          align-items: center;
+          input {
+            width: 40px;
+            height: 40px;
+          }
+          .add_btn {
+            background-color: #64cd82;
+            border: none;
+            width: 100%;
+            height: 40px;
+            border-radius: 2px;
+            color: whitesmoke;
+            font-weight: bold;
+            font-size: 0.9rem;
+          }
+          .add_btn:hover {
+            background-color: #418b56;
+          }
+        }
+        .buy_it_now_btn {
+          width: 100%;
+          height: 40px;
+          border: 0;
+          outline: none;
+          background-color: rgb(26, 57, 69);
+          margin-top: 0.6rem;
+          color: whitesmoke;
+          font-weight: bold;
+          font-size: 0.9rem;
+        }
+        .buy_it_now_btn:hover {
+          background-color: rgb(19, 47, 59);
+        }
+        .buyNowList {
+          margin-top: 1rem;
+          display: flex;
+          flex-direction: column;
+          gap: 0.3rem;
+          p {
+            margin-bottom: 0;
+          }
+        }
+      }
+      .line {
+        margin-top: 1.5rem;
+        width: 70%;
+        height: 1px;
+        background-color: rgb(214, 205, 205);
+      }
+      .xtra {
+        cursor: pointer;
+        width: 70%;
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .xtra_content {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          .xtra_img {
+            width: 100%;
+            height: 100%;
+            object-position: center;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+  .description_specification {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    gap: 1rem;
+    .description {
+      flex: 1;
+    }
+    .specification {
+      flex: 1;
+    }
+  }
+}

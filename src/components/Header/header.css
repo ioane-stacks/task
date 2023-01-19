@@ -1,0 +1,126 @@
+.header {
+  width: 100%;
+  height: 5rem;
+  background-color: rgb(43, 43, 70);
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  align-items: center;
+}
+.header .header_left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.header .header_left .header_icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+.header .header_left .tra {
+  font-size: 1.8rem;
+}
+.header .header_left .header_btn {
+  background-color: rgb(86, 86, 47);
+  color: white;
+  width: 150px;
+  height: 40px;
+  font-weight: bold;
+  border: 0;
+  border-radius: 0.3rem;
+}
+.header .header_center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header .header_center .x_tra {
+  font-size: 1.5rem;
+  display: none;
+}
+.header .header_center .form {
+  display: flex;
+}
+.header .header_center .my_input {
+  width: 400px;
+  height: 40px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  padding: 0 0 0 10px;
+  outline: none;
+}
+.header .header_center .searchIcon {
+  width: 50px;
+  height: 40px;
+  background-color: white;
+  font-size: 1rem;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  border: none;
+}
+.header .header_right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.header .header_right .insta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.header .header_right .person_icon {
+  font-size: 1.2rem;
+}
+.header .header_right .cart {
+  font-size: 1.5rem;
+  position: relative;
+}
+.header .header_right .cart .amount {
+  position: absolute;
+  top: 3px;
+  right: -4px;
+  background-color: rgb(233, 204, 14);
+  font-size: 0.8rem;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+@media screen and (max-width: 1075px) {
+  .header .header_left .header_btn {
+    display: none;
+  }
+  .header .header_left .header_icon {
+    display: block;
+  }
+  .header .header_right .stars {
+    display: none;
+  }
+  .header .header_right .insta {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .header .header_center .form .my_input {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header .header_left .tra {
+    display: none;
+  }
+  .header .header_center .x_tra {
+    display: block;
+  }
+  .header .header_center .form {
+    display: none;
+  }
+}/*# sourceMappingURL=header.css.map */
